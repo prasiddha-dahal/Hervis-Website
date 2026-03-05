@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hervis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="site-label">hervis project</div>
+
+    <h1 id="hervis">Hervis</h1>
+    <div class="top-content">
+    <p>
+        Hervis is a plugin-oriented ambient computing layer for Linux — a gesture-driven, context-aware interface that
+        sits between you and your desktop. It integrates voice, vision, LLMs, and window management into a single
+        hot-swappable runtime.
+    </p>
+    <p>I'm building Hervis because the next interface isn't a chatbot or an app — it's the OS itself becoming aware.</p>
+
+    <p>Excited about:</p>
+    <ul>
+        <li>Gesture-native interaction: V for camera, palm-move for windows, pinch to resize — no keyboard required</li>
+        <li>Hot-swappable plugins: swap context engines, voice models, or vision backends at runtime without restarting
+        </li>
+        <li>Ambient wake: Hervis listens, watches, and acts — idle until you need it, instant when you do</li>
+    </ul>
+            </div>
+
+    <!-- POSTS -->
+    <section id="posts">
+        <h2 id="heading-posts">posts</h2>
+        <ul class="posts-list">
+            <li>
+                <a href="#">
+                    <span class="post-title">Architecture of Hervis — the plugin runtime and event bus</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="post-title">Developing the Context System — how Hervis tracks what you're doing</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="post-title">Vision Model Interface — connecting camera input to gesture handlers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="post-title">Audio Model Interface — ambient wake and voice recognition pipeline</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <h2 id="gallery-heading">gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/ISS053-E-153654_-_View_of_Earth.jpg/960px-ISS053-E-153654_-_View_of_Earth.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Himalayas.jpg/960px-Himalayas.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg/960px-Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bee_Collecting_Pollen_2004-08-14.jpg/960px-Bee_Collecting_Pollen_2004-08-14.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Gumdrop_Meets_Spider_-_GPN-2000-001100.jpg/960px-Gumdrop_Meets_Spider_-_GPN-2000-001100.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/The_Cloisters_at_Gloucester_Cathedral.jpg/960px-The_Cloisters_at_Gloucester_Cathedral.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Lanzarote_5_Luc_Viatour.jpg/960px-Lanzarote_5_Luc_Viatour.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Phidippus_audax_male.jpg/960px-Phidippus_audax_male.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Chicago_world%27s_fair%2C_a_century_of_progress%2C_expo_poster%2C_1933%2C_2.jpg/960px-Chicago_world%27s_fair%2C_a_century_of_progress%2C_expo_poster%2C_1933%2C_2.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/St._Peter_and_St._Paul%27s_Church_3%2C_Vilnius%2C_Lithuania_-_Diliff.jpg/960px-St._Peter_and_St._Paul%27s_Church_3%2C_Vilnius%2C_Lithuania_-_Diliff.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ogata_Gekko_-_Ryu_sho_ten_edit.jpg/960px-Ogata_Gekko_-_Ryu_sho_ten_edit.jpg"
+                alt="" loading="lazy" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Squid_komodo.jpg/960px-Squid_komodo.jpg"
+                alt="" loading="lazy" />
+        </div>
+        <div class="gallery-source">
+            <span>Photos</span>
+            <a href="https://commons.wikimedia.org" target="_blank">Wikipedia</a>
+        </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section id="components">
+        <h2 id="component-heading">components</h2>
+        <p class="comp-intro">Hervis is built from three interlocking layers — each independently pluggable and
+            hot-swappable.</p>
+
+        <div class="comp-group">
+            <div class="comp-group-title">Core</div>
+            <ul>
+                <li>Tokenizer &amp; Minimal Parser</li>
+                <li>Context Awareness Engine</li>
+                <li>Modes — command, idle, action</li>
+                <li>Voice Recognition</li>
+                <li>LLM Integration (llama-class tiny models)</li>
+            </ul>
+        </div>
+
+        <div class="comp-group">
+            <div class="comp-group-title">Interaction Layer</div>
+            <ul>
+                <li>Ambient Wake</li>
+                <li>Overlay UI — GTK, Wayland layer-shell</li>
+                <li>Window &amp; Session Control</li>
+                <li>Gesture Handlers — camera and keyboard</li>
+            </ul>
+        </div>
+
+        <div class="comp-group">
+            <div class="comp-group-title">System Layer</div>
+            <ul>
+                <li>IPC Core</li>
+                <li>Event Bus</li>
+                <li>Memory / State Store</li>
+                <li>Runtime for Macro Mapping</li>
+            </ul>
+        </div>
+
+        <div class="comp-group">
+            <div class="comp-group-title">Plugins</div>
+            <ul>
+                <li>Context Awareness</li>
+                <li>Language Model</li>
+                <li>Gesture Handler</li>
+                <li>Voice Model</li>
+                <li>Character-Render Engine (Wayland / Windows / Mac)</li>
+                <li>Vision Model</li>
+                <li>Macro Controller</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
