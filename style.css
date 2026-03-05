@@ -7,7 +7,7 @@
     }
 
     body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-family:"Saira", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
         font-size: 15px;
         line-height: 1.6;
         color: #1a1a1a;
@@ -246,7 +246,7 @@
     }
 
     .comp-group-title {
-        font-size: 13px;
+        font-size: 1rem;
         font-weight: 600;
         color: #1a1a1a;
         margin-bottom: 4px;
@@ -254,78 +254,16 @@
 
     .comp-group ul {
         margin: 0 0 0 18px;
-        font-size: 13px;
+        font-size: 1rem;
         color: #555;
     }
 
     .comp-intro {
-        font-size: 13px;
+        font-size: 1rem;
         color: #555;
         margin-bottom: 18px;
     }
 
-    /* ideas */
-    .ideas-label {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 10px;
-    }
-
-    .ideas-form {
-        display: flex;
-        gap: 8px;
-        align-items: flex-start;
-    }
-
-    .ideas-form textarea {
-        flex: 1;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 8px 10px;
-        font-size: 14px;
-        font-family: inherit;
-        resize: none;
-        height: 38px;
-        outline: none;
-        color: #1a1a1a;
-    }
-
-    .ideas-form textarea:focus {
-        border-color: #aaa;
-    }
-
-    .ideas-form button {
-        border: 1px solid #ddd;
-        background: #fff;
-        border-radius: 4px;
-        padding: 7px 14px;
-        font-size: 13px;
-        cursor: pointer;
-        font-family: inherit;
-        color: #333;
-    }
-
-    .ideas-form button:hover {
-        background: #f5f5f5;
-    }
-
-    .footer-social {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px;
-        margin-top: 20px;
-    }
-
-    .footer-social a {
-        font-size: 13px;
-        color: #555;
-        text-decoration: none;
-    }
-
-    .footer-social a:hover {
-        text-decoration: underline;
-        color: #000;
-    }
 
     @media (max-width: 480px) {
         .gallery-grid {
